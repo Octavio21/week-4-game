@@ -38,3 +38,18 @@ function startGame() {
     
     $('#score').text('Wins: ' + wins + '   Losses: ' + losses);
 }
+
+function processClick(value) {
+    totalGuessed += value;
+    $('#player').text(totalGuessed);
+    $('#result').text('');
+    if (totalGuessed === numberToGuess) {
+        $('#result').text('You win!');
+        wins++;
+        startGame();
+    } else if (totalGuessed > numberToGuess) {
+        $('#result').text('You lose!');
+        losses++;
+        startGame();
+    }
+}

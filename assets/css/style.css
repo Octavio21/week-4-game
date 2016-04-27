@@ -1,0 +1,40 @@
+.paracontainer{
+  
+  background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 450px;
+	height:350px;
+	background:#f1f9b2;
+
+}
+
+p{
+	color:green;
+}
+
+.row{
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.randomNumber{
+	
+	background: #fff;
+	
+	
+	width: 100px;
+	height:100px;
+	background:red;
+
+}
+.results{
+	
+	background: #fff;
+	
+	
+	width: 100px;
+	height:100px;
+	background:#f1f9b2;
+}

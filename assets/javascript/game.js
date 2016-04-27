@@ -24,3 +24,17 @@ $('.crystal3').click(function() {
 $('.crystal4').click(function() {
     processClick(crystalValue4);
 });
+
+function startGame() {
+    numberToGuess = Math.floor((Math.random() * 120) + 1);
+    crystalValue1 = Math.floor((Math.random() * 12) + 1);
+    crystalValue2 = Math.floor((Math.random() * 12) + 1);
+    crystalValue3 = Math.floor((Math.random() * 12) + 1);
+    crystalValue4 = Math.floor((Math.random() * 12) + 1);
+    totalGuessed = 0;
+    
+    $('#target').text(numberToGuess);
+    $('#player').text(totalGuessed);
+    
+    $('#score').text('Wins: ' + wins + '   Losses: ' + losses);
+}
